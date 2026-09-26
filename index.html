@@ -3,26 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
   <title>OpenCode Supervisor V1</title>
-  <meta name="description" content="Personal-use control and automation service for OpenCode Supervisor V1.">
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:64px auto;padding:0 20px;line-height:1.6;color:#1f2328}
-    h1{line-height:1.2} a{color:#0969da}.muted{color:#59636e}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:680px;margin:64px auto;padding:0 20px;line-height:1.6;color:#1f2328}
+    a{color:#0969da}
   </style>
 </head>
 <body>
   <h1>OpenCode Supervisor V1</h1>
-  <p>OpenCode Supervisor V1 is a private, personal-use automation service for sending authorized tasks to a controlled OpenCode execution environment and synchronizing approved results with Google Drive.</p>
-
-  <p>The service is intended for use only by its owner and explicitly authorized accounts. It is not offered as a public SaaS product.</p>
-
-  <h2>How it works</h2>
-  <p>Authorized commands are received through Telegram, dispatched through a stateless Cloudflare Worker, executed in a serialized GitHub Actions environment, and may read from or write to specifically approved Google Drive folders according to the configured task mode and safety controls.</p>
-
-  <h2>Google Drive access</h2>
-  <p>Google Drive access is used only to read approved project files, maintain private runtime/recovery state, and write back changes when explicitly authorized by the task.</p>
-
+  <p>This is a private, personal-use application available only to its owner and explicitly authorized accounts.</p>
+  <p>It uses Google Drive only as necessary to perform owner-authorized automation on files and folders made available to the application.</p>
   <p><a href="/privacy.html">Privacy Policy</a></p>
-  <p class="muted">Contact: chrisruttner@gmail.com</p>
 </body>
 </html>
